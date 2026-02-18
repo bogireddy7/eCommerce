@@ -1,0 +1,37 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f9fafb;color:#111}
+
+/* NAVBAR */
+.navbar{background:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+.logo{font-size:1.5rem;font-weight:800;color:#667eea}
+.search-input{padding:8px 14px;border-radius:10px;border:1px solid #ddd;width:250px}
+.cart-btn{background:#667eea;color:#fff;border:none;padding:8px 16px;border-radius:10px;cursor:pointer;position:relative}
+.cart-badge{position:absolute;top:-6px;right:-6px;background:red;color:#fff;width:18px;height:18px;border-radius:50%;font-size:0.7rem;display:flex;align-items:center;justify-content:center}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center;padding:40px}
+.hero h1{font-size:2rem;margin-bottom:10px}
+
+/* FILTER */
+.filters{display:flex;gap:10px;padding:20px;justify-content:center}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.filter-btn.active{background:#667eea;color:#fff;border-color:#667eea}
+
+/* PRODUCTS */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;padding:20px}
+.product-card{background:#fff;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+.product-image img{width:100%;height:220px;object-fit:cover}
+.discount-badge{position:absolute;top:10px;left:10px;background:red;color:#fff;padding:4px 8px;font-size:0.7rem;border-radius:6px}
+.wishlist-btn{position:absolute;top:10px;right:10px;background:#fff;padding:6px;border-radius:50%;cursor:pointer}
+.product-body{padding:14px}
+.product-name{font-weight:700;margin-bottom:6px}
+.price-box{display:flex;gap:8px;margin-bottom:8px}
+.new-price{font-weight:800}
+.old-price{text-decoration:line-through;color:gray}
+.option-select{width:100%;margin-bottom:6px;padding:6px;border-radius:8px;border:1px solid #ddd}
+.add-to-cart-btn{width:100%;padding:8px;background:#667eea;color:#fff;border:none;border-radius:8px;cursor:pointer}
+
+/* CART */
+.cart-modal{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;justify-content:flex-end}
+.cart-modal.show{display:flex}
+.cart-panel{background:#fff;width:350px;height:100vh;padding:20px;overflow:auto}
